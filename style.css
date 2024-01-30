@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f3f3f3;
+  font-size: 1.8rem;
+  color: #18212f;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  background-image: url(./img/Email-marketing.png);
+  background-size: cover;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-side {
+  width: 70%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 7.2rem 0;
+  column-gap: 2rem;
+}
+
+.logo svg {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.logo-text {
+  font-size: 4.8rem;
+  color: #eee;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.text {
+  font-size: 4.8rem;
+  font-weight: 800;
+  margin-top: 12.8rem;
+  margin-bottom: 6.4rem;
+  padding-left: 6.4rem;
+}
+form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 5.6rem 0;
+  padding-left: 6.4rem;
+  width: 100%;
+  margin-bottom: 7.2rem;
+}
+
+.w-32 {
+  width: 32%;
+}
+
+.mr-lg {
+  margin-right: 12.8rem;
+}
+
+.input-group {
+  height: 5.6rem;
+  width: 100%;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #525252;
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #18212f;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-2.5rem);
+  font-size: 1.6rem;
+  color: #353e4f;
+}
+
+label {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  color: #18212f;
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0.3rem;
+  width: 100%;
+}
+
+.underline::before {
+  content: "";
+  background-color: #1d4ed8;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transition: all 0.5s ease;
+}
+
+input:focus ~ .underline::before,
+input:valid ~ .underline::before {
+  transform: scaleX(1);
+}
+
+.account {
+  padding-left: 6.4rem;
+}
+
+.btn {
+  padding: 2rem 4rem;
+  border: none;
+  outline: none;
+  background-color: #1d4ed8;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  background-color: #3460dc;
+}
+
+.login {
+  font-size: 2rem;
+}
+
+.login a {
+  text-decoration: none;
+  color: #1d4ed8;
+  transition: all 0.5s ease;
+}
+.login a:hover {
+  color: #4a71e0;
+  transform: scale(0.98);
+  text-decoration: underline;
+}
